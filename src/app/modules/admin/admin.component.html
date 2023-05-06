@@ -1,0 +1,18 @@
+<div class="header fixed w-full top-0 p-3 font-bold font-2xl">
+    HANDGUN DETECTION INCIDENTS
+</div>
+
+<div class="container flex">
+
+    <div class="list overflow-y-auto overflow-x-hidden">
+        <ng-container *ngIf="incidentes">
+            <app-incidente *ngFor="let incidente of incidentes" [incidente]="incidente"></app-incidente>
+        </ng-container>
+    </div>
+    
+    <div>
+        <agm-map [latitude]="lat" [longitude]="lng">
+            <agm-marker *ngFor="let incidente of incidentes" [latitude]="incidente.attributes.latitud" [longitude]="incidente.attributes.longitud"></agm-marker>
+        </agm-map>
+    </div>
+</div>

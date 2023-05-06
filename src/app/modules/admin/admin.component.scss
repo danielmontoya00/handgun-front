@@ -1,0 +1,19 @@
+.header {
+    background-color: #1fb5bf;
+    color: white;
+    height: 50px;
+}
+
+.container {
+    margin-top: 50px;
+    max-height: calc(100vh - 50px);
+
+    .list {
+        min-width: 300px;
+    }
+}
+
+agm-map {
+    width: calc(100vw - 300px);
+    height: calc(100vh - 50px);
+  }

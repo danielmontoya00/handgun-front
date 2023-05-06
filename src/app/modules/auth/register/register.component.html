@@ -1,0 +1,39 @@
+<div class="container mt-4">
+    <form [formGroup]="form" (submit)="enviar()">
+        <div class="row justify-content-md-center ">
+
+
+            <div class="col-lg-4 login-container  p-4">
+
+                <div class="login-title">Register</div>
+                <div class="form-group mb-4">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input formControlName="correo" type="email" class="form-control" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+
+                <div class="form-group mb-4">
+                    <label for="exampleInputPassword1 ">Password</label>
+                    <input formControlName="password" type="password" class="form-control " id="exampleInputPassword1"
+                        placeholder="Password">
+                </div>
+                <div class="form-group mb-4">
+                    <!-- first name -->
+                    <label for="exampleInputPassword1 ">First Name</label>
+                    <input formControlName="firstName" type="text" class="form-control " id="exampleInputPassword1"
+                        placeholder="First Name">
+                </div>
+
+                <div>
+                    <!-- last name -->
+                    <label for="exampleInputPassword1 ">Last Name</label>
+                    <input formControlName="lastName" type="text" class="form-control " id="exampleInputPassword1"
+                        placeholder="Last Name">
+                </div>
+                <button type="submit" class="button btn-green">Submit</button>
+                <!-- <div class="recuperar mt-2"><a>Recuperar contraseña</a></div> -->
+            </div>
+
+        </div>
+    </form>
+</div>
